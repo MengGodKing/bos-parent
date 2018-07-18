@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bos-service:jar">
+    <output-path>$MAVEN_REPOSITORY$/com/itheima</output-path>
+    <root id="archive" name="bos-service.jar">
+      <element id="module-output" name="bos-service" />
+    </root>
+  </artifact>
+</component>
