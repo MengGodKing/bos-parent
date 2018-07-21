@@ -83,11 +83,35 @@
 		$("#btnCancel").click(function(){
 			$('#editPwdWindow').window('close');
 		});
-		
-		$("#btnEp").click(function(){
-			alert("修改密码");
-		});
-	});
+
+        //为按钮绑定事件
+        $("#btnEp").click(function () {
+            //进行表单校验
+            var v = $('#editPasswordForm').form("validate");
+            if(v){
+                var var1 = $("#txtNewPass").val();
+                var var2 = $("#txtRePass").val();
+
+                if (var1 == var2){
+
+                    $.post("userAction_editPassword.action",{"password":var1},function (data) {
+                        alert(data);
+                        if (data == '1'){
+                            $("#editPwdWindow").window("close");
+                        } else {
+                            $.messager.alert("提示信息","密码修改失败！","error");
+                        }
+                    });
+                } else {
+                    $.messager.alert("提示消息","两次密码输入不一致","warning");
+                }
+            }
+        })
+
+
+
+    });
+
 
 	function onClick(event, treeId, treeNode, clickFlag) {
 		// 判断树菜单节点是否含有 page属性
@@ -142,7 +166,7 @@
 		$.messager
 		.confirm('系统提示','您确定要退出本次登录吗?',function(isConfirm) {
 			if (isConfirm) {
-				location.href = '${pageContext.request.contextPath }/login.jsp';
+				location.href = '${pageContext.request.contextPath }/userAction_logout.action';
 			}
 		});
 	}
@@ -158,7 +182,7 @@
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north',border:false"
-		style="height:80px;padding:10px;background:url('./images/header_bg.png') no-repeat right;">
+		style="height:80px;padding:10px;background:url('/images/header_bg.png') no-repeat right;">
 		<div id="sessionInfoDiv"
 			style="position: absolute;right: 5px;top:10px;">
 			[<strong>超级管理员</strong>]，欢迎你！
@@ -205,7 +229,7 @@
 		</div>
 	</div>
 	<div data-options="region:'south',border:false"
-		style="height:50px;padding:10px;background:url('./images/header_bg.png') no-repeat right;">
+		style="height:50px;padding:10px;background:url('images/header_bg.png') no-repeat right;">
 		<table style="width: 100%;">
 			<tbody>
 				<tr>
@@ -214,7 +238,7 @@
 							传智播客 | Powered by <a href="http://www.itcast.cn/">itcast.cn</a>
 						</div>
 					</td>
-					<td style="width: *;" class="co1"><span id="online"
+					<td style="width:20px;" class="co1"><span id="online"
 						style="background: url(${pageContext.request.contextPath }/images/online.png) no-repeat left;padding-left:18px;margin-left:3px;font-size:8pt;color:#005590;">在线人数:1</span>
 					</td>
 				</tr>
@@ -228,16 +252,18 @@
         background: #fafafa">
         <div class="easyui-layout" fit="true">
             <div region="center" border="false" style="padding: 10px; background: #fff; border: 1px solid #ccc;">
+				<form id="editPasswordForm">
                 <table cellpadding=3>
                     <tr>
                         <td>新密码：</td>
-                        <td><input id="txtNewPass" type="Password" class="txt01" /></td>
+                        <td><input id="txtNewPass" required="true" data-options="validType:'length[4,6]'" type="Password" class="txt01 easyui-validatebox" /></td>
                     </tr>
                     <tr>
                         <td>确认密码：</td>
-                        <td><input id="txtRePass" type="Password" class="txt01" /></td>
+                        <td><input id="txtRePass" required="true" data-options="validType:'length[4,6]'" type="Password" class="txt01 easyui-validatebox" /></td>
                     </tr>
                 </table>
+				</form>
             </div>
             <div region="south" border="false" style="text-align: right; height: 30px; line-height: 30px;">
                 <a id="btnEp" class="easyui-linkbutton" icon="icon-ok" href="javascript:void(0)" >确定</a> 
