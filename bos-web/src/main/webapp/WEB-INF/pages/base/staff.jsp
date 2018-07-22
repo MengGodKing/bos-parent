@@ -127,10 +127,10 @@
                 border: false,
                 rownumbers: true,
                 striped: true,
-                pageList: [30, 50, 100],
+                pageList: [10],
                 pagination: true,
                 toolbar: toolbar,
-                url: "json/staff.json",
+                url: "staffAction_pageQuery.action",
                 idField: 'id',
                 columns: columns,
                 onDblClickRow: doDblClickRow
@@ -150,7 +150,10 @@
         });
 
         function doDblClickRow(rowIndex, rowData) {
-            alert("双击表格数据...");
+            //打开修改取派员窗口
+            $('#editStaffWindow').window("open");
+            //使用form表单对象的load方法回显数据
+            $("#editStaffForm").form("load",rowData);
         }
     </script>
 </head>

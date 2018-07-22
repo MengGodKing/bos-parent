@@ -9,15 +9,14 @@
     <bookmark url="jar://L:/java/jdk1.7.0_51/src.zip!/java/lang/reflect/Type.java" line="35" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c180b7e-f0b8-4a58-846e-b17dc5878fb7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IStaffDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java" afterDir="false" />
+    <list default="true" id="4c180b7e-f0b8-4a58-846e-b17dc5878fb7" name="Default" comment="添加取派元功能。">
+      <change afterPath="$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/PageBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bos-web/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bos-web/src/main/resources/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,32 +52,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="staff.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StaffAction.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StaffAction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="232">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/struts.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bos-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="145">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
             </state>
           </provider>
         </entry>
@@ -86,8 +85,11 @@
       <file leaf-file-name="IStaffService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="138">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,13 +97,39 @@
       <file leaf-file-name="IStaffServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="318">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-392">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="e#1021#1042#0" expanded="true" />
+                <element signature="e#1078#1095#0" expanded="true" />
+                <element signature="e#1128#1142#0" expanded="true" />
+                <element signature="e#1179#1197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -110,46 +138,7 @@
         <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IStaffDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IStaffDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IBaseDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IBaseAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Staff.hbm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bos-domain/src/main/java/com/itheima/bos/domain/Staff.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -162,10 +151,10 @@
         <option value="struts_2_3" />
         <option value="spring-beans.schema" />
         <option value="HTML File" />
-        <option value="JUnit4 Test Class" />
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -180,6 +169,8 @@
       <find>btnEp</find>
       <find>txtRePass</find>
       <find>修改密码</find>
+      <find>editPwdWindow</find>
+      <find>net</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -201,8 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/bos-domain/pom.xml" />
         <option value="$PROJECT_DIR$/bos-web/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/bos-web/pom.xml" />
@@ -234,21 +223,26 @@
         <option value="$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/BOSUtils.fxml" />
         <option value="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/interceptor/BOSLoginInterceptor.java" />
         <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java" />
-        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java" />
         <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/UserAction.java" />
         <option value="$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/common/index.jsp" />
         <option value="$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/BOSUtils.java" />
         <option value="$PROJECT_DIR$/bos-domain/src/main/java/com/itheima/bos/domain/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp" />
         <option value="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java" />
-        <option value="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java" />
         <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IStaffDao.java" />
-        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java" />
-        <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java" />
-        <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java" />
         <option value="$PROJECT_DIR$/bos-web/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp" />
+        <option value="$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/PageBean.java" />
+        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java" />
+        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java" />
+        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java" />
+        <option value="$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/bos-dao/src/test/java/com/itheima/bos/dao/impl/IStaffDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/bos-service/src/test/java/com/itheima/bos/service/impl/IStaffServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java" />
+        <option value="$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java" />
+        <option value="$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -277,20 +271,20 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bos-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bos-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bos-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bos-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bos-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bos-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bos-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="bos-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -301,10 +295,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1024" />
-    <option name="y" value="541" />
+    <option name="x" value="520" />
+    <option name="y" value="712" />
     <option name="width" value="2388" />
-    <option name="height" value="1463" />
+    <option name="height" value="1457" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -319,6 +313,96 @@
             <path>
               <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="bos-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -372,14 +456,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bos-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bos-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="bos-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -596,6 +672,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Oracle" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="G:/Users/Administrator/Videos/BOS/BOS-day02/BOS-day02/BOS-day02/项目/bos-parent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -603,10 +680,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itheima.bos.service.impl" />
       <recent name="com.itheima.bos.dao.impl" />
       <recent name="com.itheima.bos.dao" />
     </key>
@@ -662,6 +740,52 @@
       <option name="PACKAGE_NAME" value="com.itheima.boss.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.boss.service.impl.Demo" />
       <option name="METHOD_NAME" value="findUserByUsernameAndPassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="IStaffDaoImplTest.fun1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bos-dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.bos.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.itheima.bos.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.bos.dao.impl.IStaffDaoImplTest" />
+      <option name="METHOD_NAME" value="fun1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="IStaffServiceImplTest.fun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bos-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.bos.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.itheima.bos.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.bos.service.impl.IStaffServiceImplTest" />
+      <option name="METHOD_NAME" value="fun" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -761,9 +885,13 @@
       <item itemvalue="Maven.tomcat7" />
       <item itemvalue="JUnit.IUserDaoImplTest.findUserByUsernameAndPassword" />
       <item itemvalue="JUnit.Demo.findUserByUsernameAndPassword" />
+      <item itemvalue="JUnit.IStaffDaoImplTest.fun1" />
+      <item itemvalue="JUnit.IStaffServiceImplTest.fun" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IStaffServiceImplTest.fun" />
+        <item itemvalue="JUnit.IStaffDaoImplTest.fun1" />
         <item itemvalue="JUnit.IUserDaoImplTest.findUserByUsernameAndPassword" />
         <item itemvalue="JUnit.Demo.findUserByUsernameAndPassword" />
       </list>
@@ -791,7 +919,7 @@
       <workItem from="1531980746019" duration="9983000" />
       <workItem from="1532052669636" duration="13152000" />
       <workItem from="1532139530560" duration="33129000" />
-      <workItem from="1532237114083" duration="3677000" />
+      <workItem from="1532237114083" duration="13558000" />
     </task>
     <task id="LOCAL-00001" summary="第二天">
       <created>1531983009083</created>
@@ -807,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532237407109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加取派元功能。">
+      <created>1532241859251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532241859251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -829,9 +964,18 @@
     <history-entry file="IUserDaoImplTest_findUserByUsernameAndPassword - 2018.07.21 at 12h 28m 30s.xml">
       <configuration name="IUserDaoImplTest.findUserByUsernameAndPassword" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IStaffDaoImplTest_fun1 - 2018.07.22 at 21h 42m 43s.xml">
+      <configuration name="IStaffDaoImplTest.fun1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IStaffDaoImplTest_fun1 - 2018.07.22 at 21h 47m 48s.xml">
+      <configuration name="IStaffDaoImplTest.fun1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IStaffServiceImplTest_fun - 2018.07.22 at 21h 59m 11s.xml">
+      <configuration name="IStaffServiceImplTest.fun" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107227000" />
+    <option name="totallyTimeSpent" value="117108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -843,11 +987,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="345" y="425" width="1592" height="975" extended-state="0" />
+    <frame x="347" y="475" width="1592" height="971" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50235295" side_tool="true" weight="0.33562315" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32659712" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5013038" side_tool="true" weight="0.32577565" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32659712" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -856,13 +1001,14 @@
       <window_info id="Structure" order="1" sideWeight="0.8516378" side_tool="true" weight="0.22881787" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49882352" weight="0.37885985" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49882352" visible="true" weight="0.5767386" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49934554" weight="0.31287128" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934554" visible="true" weight="0.32577565" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986962" weight="0.35491607" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.2980198" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -875,7 +1021,6 @@
       <window_info id="Persistence" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="8" sideWeight="0.49764705" weight="0.33562315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49934554" weight="0.31287128" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -926,7 +1071,8 @@
     <MESSAGE value="初始化项目" />
     <MESSAGE value="第二天" />
     <MESSAGE value="添加实体映射文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加实体映射文件" />
+    <MESSAGE value="添加取派元功能。" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加取派元功能。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,13 +1090,13 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java</url>
+          <line>41</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="52" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -967,6 +1113,26 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>var23</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>var23.getTargetException()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(staffService)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>staffService</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>ServletActionContext.getRequest().getSession().getAttribute(&quot;loginUser&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -992,72 +1158,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>userDao</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>userDao.findUserByUsernameAndPassword(user.getUsername(),password)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>userDao.findUserByUsernameAndPassword(user.getUsername(),user.getPassword())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.getClass()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/bos-service/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/bos-web/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/bos-domain/pom.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.4.RELEASE/spring-tx-4.2.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="157" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.2.4.RELEASE/spring-tx-4.2.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://L:/java/jdk1.7.0_51/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/applicationContext.xml" />
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/login.jsp" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.3.24/xwork-core-2.3.24.jar!/com/opensymphony/xwork2/mock/MockInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1207,13 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/ognl/ObjectMethodAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://L:/java/jdk1.7.0_51/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1228,17 +1324,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/ognl/OgnlRuntime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="815" selection-start-line="815" selection-end-line="815" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/common/home.jsp" />
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/common/index.jsp" />
     <entry file="file://$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/BOSUtils.java" />
-    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IUserDaoImpl.java" />
     <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/UserAction.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.4.RELEASE/spring-aop-4.2.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1250,7 +1336,6 @@
     <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/index.jsp" />
     <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IUserService.java" />
     <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/UserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java" />
     <entry file="file://$PROJECT_DIR$/bos-domain/src/main/java/com/itheima/bos/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1271,6 +1356,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bos-domain/src/main/java/com/itheima/bos/domain/Staff.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1278,31 +1370,183 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bos-domain/src/main/java/com/itheima/bos/domain/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/subarea.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/decidedzone.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/common/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2139">
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/common/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IUserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-utils/src/main/java/com/itheima/bos/utils/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-dao/src/test/java/com/itheima/bos/dao/impl/IStaffDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IBaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-service/src/test/java/com/itheima/bos/service/impl/IStaffServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bos-web/src/main/webapp/WEB-INF/pages/base/staff.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        <state relative-caret-position="441">
+          <caret line="132" column="34" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/IStaffDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos-dao/src/main/java/com/itheima/bos/dao/impl/IStaffDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/bos-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/ognl/ObjectMethodAccessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="282">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.3.24/xwork-core-2.3.24.jar!/com/opensymphony/xwork2/ognl/accessor/XWorkMethodAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/struts/xwork/xwork-core/2.3.24/xwork-core-2.3.24.jar!/com/opensymphony/xwork2/Action.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1311,44 +1555,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/impl/IStaffServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="318">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bos-service/src/main/java/com/itheima/bos/service/IStaffService.java">
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/IBaseAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-392">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1021#1042#0" expanded="true" />
+            <element signature="e#1078#1095#0" expanded="true" />
+            <element signature="e#1128#1142#0" expanded="true" />
+            <element signature="e#1179#1197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bos-web/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="146">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/ognl/OgnlRuntime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="815" selection-start-line="815" selection-end-line="815" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bos-web/src/main/java/com/itheima/bos/web/action/StaffAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
