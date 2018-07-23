@@ -10,4 +10,8 @@ public interface IStaffService {
     public void pageQuery(PageBean pageBean);
 
     public void delete(String ids);
+
+    Staff fingById(String id);
+
+    public void update(Staff staff);
 }

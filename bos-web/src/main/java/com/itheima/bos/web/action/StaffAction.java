@@ -64,6 +64,24 @@ public class StaffAction extends IBaseAction<Staff> {
     }
 
 
+    /**
+     * 修改取派員
+     * @return
+     */
+    public String edit(){
+        Staff staff = staffService.fingById(model.getId());
+        staff.setName(model.getName());
+        staff.setTelephone(model.getTelephone());
+        staff.setHaspda(model.getHaspda());
+        staff.setStation(model.getStation());
+        staff.setStandard(model.getStandard());
+
+        staffService.update(staff);
+
+        return LIST;
+    }
+
+
     public int getPage() {
         return page;
     }
