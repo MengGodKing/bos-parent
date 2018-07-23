@@ -9,4 +9,5 @@ public interface IStaffService {
     public void add(Staff staff);
     public void pageQuery(PageBean pageBean);
 
+    public void delete(String ids);
 }

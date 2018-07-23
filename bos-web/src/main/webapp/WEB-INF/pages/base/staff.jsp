@@ -37,7 +37,20 @@
         }
 
         function doDelete() {
-            alert("删除...");
+            //获取所有的行
+            var rows = $("#grid").datagrid("getSelections");
+            if(rows.length == 0){
+                //没有选中记录，弹出提示
+                $.messager.alert("提示","请选择需要作废的取派员","info");
+            }else {
+                var array = new Array();
+                for (var i = 0; i < rows.length ; i++) {
+                    array.push(rows[i].id);
+                }
+                var ids = array.join("+");
+                location.href = "staffAction_delete.action?ids="+ids;
+            }
+
         }
 
         function doRestore() {

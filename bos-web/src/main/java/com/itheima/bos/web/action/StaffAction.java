@@ -20,6 +20,7 @@ public class StaffAction extends IBaseAction<Staff> {
     //属性驱动，接收页面提交的分页参数
     private int page;
     private int rows;
+    private String ids;
 
     @Autowired
     private IStaffService staffService;
@@ -53,6 +54,15 @@ public class StaffAction extends IBaseAction<Staff> {
         return NONE;
     }
 
+    /**
+     * 作废
+     * @return
+     */
+    public String delete(){
+        staffService.delete(ids);
+        return LIST;
+    }
+
 
     public int getPage() {
         return page;
@@ -60,5 +70,9 @@ public class StaffAction extends IBaseAction<Staff> {
 
     public int getRows() {
         return rows;
+    }
+
+    public void setIds(String ids) {
+        this.ids = ids;
     }
 }

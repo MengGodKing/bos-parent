@@ -32,4 +32,7 @@
             <one-to-many class="com.itheima.bos.domain.Decidedzone" />
         </set>
     </class>
+    <query name="staff.delete">
+        UPDATE Staff set deltag = '1'where id = ?
+    </query>
 </hibernate-mapping>
