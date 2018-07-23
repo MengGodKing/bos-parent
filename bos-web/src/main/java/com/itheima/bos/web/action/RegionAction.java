@@ -2,12 +2,17 @@ package com.itheima.bos.web.action;
 
 import com.itheima.bos.domain.Region;
 import com.itheima.bos.service.RegionService;
+import com.itheima.bos.utils.PageBean;
 import com.itheima.bos.utils.PinYin4jUtils;
+import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
 import org.apache.commons.lang.StringUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.struts2.ServletActionContext;
+import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -22,11 +27,21 @@ import java.util.List;
 public class RegionAction extends IBaseAction<Region> {
 
     private File regionFile;
+    private int page;
+    private int rows;
     @Autowired
     private RegionService regionService;
 
     public void setRegionFile(File regionFile) {
         this.regionFile = regionFile;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public void setRows(int rows) {
+        this.rows = rows;
     }
 
     public String importXls() throws IOException {
@@ -66,5 +81,13 @@ public class RegionAction extends IBaseAction<Region> {
 
 
         return LIST;
+    }
+
+
+    public String pageQuery() throws IOException {
+        regionService.pageQuery(pageBean);
+        this.java2Json(page,new String[]{"currentPage","detachedCriteria","pageSize"});
+
+        return NONE;
     }
 }

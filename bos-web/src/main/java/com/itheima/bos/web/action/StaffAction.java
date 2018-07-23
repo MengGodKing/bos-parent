@@ -17,9 +17,7 @@ import java.io.IOException;
 @Scope("prototype")
 public class StaffAction extends IBaseAction<Staff> {
 
-    //属性驱动，接收页面提交的分页参数
-    private int page;
-    private int rows;
+
     private String ids;
 
     @Autowired
@@ -34,23 +32,12 @@ public class StaffAction extends IBaseAction<Staff> {
      * @throws IOException
      */
     public String pageQuery() throws IOException{
-        PageBean pageBean = new PageBean();
-        pageBean.setCurrentPage(page);
-        pageBean.setPageSize(rows);
-        //创建离线提交查询对象
-        DetachedCriteria detachedCriteria = DetachedCriteria.forClass(Staff.class);
-        pageBean.setDetachedCriteria(detachedCriteria);
+
+
         staffService.pageQuery(pageBean);
 
-        //使用json-lib将PageBean对象转为json，通过输出流写回页面中
-        //JSONObject---将单一对象转为json
-        //JSONArray----将数组或者集合对象转为json
-        JsonConfig jsonConfig = new JsonConfig();
-        //指定哪些属性不需要转json
-        jsonConfig.setExcludes(new String[]{"currentPage","detachedCriteria","pageSize"});
-        String json = JSONObject.fromObject(pageBean,jsonConfig).toString();
-        ServletActionContext.getResponse().setContentType("text/json;charset=utf-8");
-        ServletActionContext.getResponse().getWriter().print(json);
+        this.java2Json(pageBean,new String[]{"currentPage","detachedCriteria","pageSize"});
+
         return NONE;
     }
 
@@ -82,13 +69,7 @@ public class StaffAction extends IBaseAction<Staff> {
     }
 
 
-    public int getPage() {
-        return page;
-    }
 
-    public int getRows() {
-        return rows;
-    }
 
     public void setIds(String ids) {
         this.ids = ids;
