@@ -14,6 +14,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.struts2.ServletActionContext;
 import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
@@ -24,11 +25,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@Scope("prototype")
 public class RegionAction extends IBaseAction<Region> {
 
     private File regionFile;
     private int page;
     private int rows;
+    private String q;
     @Autowired
     private RegionService regionService;
 
@@ -43,6 +46,12 @@ public class RegionAction extends IBaseAction<Region> {
     public void setRows(int rows) {
         this.rows = rows;
     }
+
+    public void setQ(String q) {
+        this.q = q;
+    }
+
+
 
     public String importXls() throws IOException {
 
@@ -86,8 +95,21 @@ public class RegionAction extends IBaseAction<Region> {
 
     public String pageQuery() throws IOException {
         regionService.pageQuery(pageBean);
-        this.java2Json(page,new String[]{"currentPage","detachedCriteria","pageSize"});
+        this.java2Json(pageBean,new String[]{"currentPage","detachedCriteria","pageSize","subareas"});
 
+        return NONE;
+    }
+
+    public String listajax() {
+
+
+        List<Region> list = null;
+        if (org.apache.commons.lang3.StringUtils.isNotBlank(q)) {
+            list = regionService.findByQ(q);
+        } else {
+            list = regionService.findAll();
+        }
+        this.java2Json(list, new String[]{"subareas"});
         return NONE;
     }
 }

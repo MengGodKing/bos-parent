@@ -1,7 +1,9 @@
 package com.itheima.bos.dao;
 
 import com.itheima.bos.domain.Region;
+import com.itheima.bos.domain.Subarea;
 import com.itheima.bos.utils.PageBean;
+import org.hibernate.criterion.DetachedCriteria;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,5 +18,6 @@ public interface IBaseDao<T> {
     public void executeUpdate(String queryName,Object...Objects);
     public void pageQuery(PageBean pageBean);
 
+    public List<T> findByCriteria(DetachedCriteria detachedCriteria);
 
 }

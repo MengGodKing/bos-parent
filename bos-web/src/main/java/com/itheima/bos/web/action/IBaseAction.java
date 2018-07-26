@@ -4,6 +4,7 @@ import com.itheima.bos.domain.Staff;
 import com.itheima.bos.utils.PageBean;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
 import org.apache.struts2.ServletActionContext;
@@ -12,6 +13,7 @@ import org.hibernate.criterion.DetachedCriteria;
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.List;
 
 public class IBaseAction<T> extends ActionSupport implements ModelDriven<T> {
     public static final String HOME = "home";
@@ -64,8 +66,21 @@ public class IBaseAction<T> extends ActionSupport implements ModelDriven<T> {
         //JSONArray----将数组或者集合对象转为json
         JsonConfig jsonConfig = new JsonConfig();
         //指定哪些属性不需要转json
-        jsonConfig.setExcludes(new String[]{"currentPage","detachedCriteria","pageSize"});
-        String json = JSONObject.fromObject(pageBean,jsonConfig).toString();
+        jsonConfig.setExcludes(exclued);
+        String json = JSONObject.fromObject(obj,jsonConfig).toString();
+        ServletActionContext.getResponse().setContentType("text/json;charset=utf-8");
+        try {
+            ServletActionContext.getResponse().getWriter().print(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void java2Json(List o ,String[] exclueds){
+        JsonConfig jsonConfig = new JsonConfig();
+        //指定哪些属性不需要转json
+        jsonConfig.setExcludes(exclueds);
+        String json = JSONArray.fromObject(o,jsonConfig).toString();
         ServletActionContext.getResponse().setContentType("text/json;charset=utf-8");
         try {
             ServletActionContext.getResponse().getWriter().print(json);

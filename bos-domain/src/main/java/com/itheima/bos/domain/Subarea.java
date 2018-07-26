@@ -44,6 +44,11 @@ public class Subarea implements java.io.Serializable {
 
 	// Property accessors
 
+
+	public String getSubareaid(){
+		return id;
+	}
+
 	public String getId() {
 		return this.id;
 	}

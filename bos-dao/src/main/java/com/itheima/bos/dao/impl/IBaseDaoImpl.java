@@ -2,6 +2,7 @@ package com.itheima.bos.dao.impl;
 
 import com.itheima.bos.dao.IBaseDao;
 import com.itheima.bos.domain.Staff;
+import com.itheima.bos.domain.Subarea;
 import com.itheima.bos.utils.PageBean;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -35,7 +36,7 @@ public class IBaseDaoImpl<T> extends HibernateDaoSupport implements IBaseDao<T> 
 
     @Override
     public void save(T entity) {
-        this.getHibernateTemplate().save(entity);
+            this.getHibernateTemplate().save(entity);
     }
 
     @Override
@@ -90,10 +91,16 @@ public class IBaseDaoImpl<T> extends HibernateDaoSupport implements IBaseDao<T> 
 
         //查询rows--当前页需要展示的数据集合
         criteria.setProjection(null);
+        criteria.setResultTransformer(criteria.ROOT_ENTITY);
         int index = (currentPage-1)*pageSize;
         int maxResults = pageSize;
         List rows = this.getHibernateTemplate().findByCriteria(criteria, index, maxResults);
         pageBean.setRows(rows);
 
+    }
+
+    @Override
+    public List<T> findByCriteria(DetachedCriteria detachedCriteria) {
+        return (List<T>) this.getHibernateTemplate().findByCriteria(detachedCriteria);
     }
 }

@@ -44,7 +44,7 @@
 	}
 	
 	function doExport(){
-		alert("导出");
+		window.location.href = "subareaAction_exportXls.action";
 	}
 	
 	function doImport(){
@@ -160,11 +160,13 @@
 			pageList: [30,50,100],
 			pagination : true,
 			toolbar : toolbar,
-			url : "json/subarea.json",
+			url : "subareaAction_pageQuery.action",
 			idField : 'id',
 			columns : columns,
 			onDblClickRow : doDblClickRow
 		});
+
+
 		
 		// 添加、修改分区
 		$('#addSubareaWindow').window({
@@ -187,8 +189,34 @@
 	        height: 400,
 	        resizable:false
 	    });
-		$("#btn").click(function(){
-			alert("执行查询...");
+
+        //定义一个工具方法，用于将指定的form表单中所有的输入项转为json数据{key:value,key:value}
+        $.fn.serializeJson=function(){
+            var serializeObj={};
+            var array=this.serializeArray();
+            $(array).each(function(){
+                if(serializeObj[this.name]){
+                    if($.isArray(serializeObj[this.name])){
+                        serializeObj[this.name].push(this.value);
+                    }else{
+                        serializeObj[this.name]=[serializeObj[this.name],this.value];
+                    }
+                }else{
+                    serializeObj[this.name]=this.value;
+                }
+            });
+            return serializeObj;
+        };
+
+        $("#btn").click(function(){
+            //将指定的form表单中所有的输入项转为json数据{key:value,key:value}
+            var p = $("#searchForm").serializeJson();
+            console.info(p);
+            //调用数据表格的load方法，重新发送一次ajax请求，并且提交参数
+            $("#grid").datagrid("load",p);
+            //关闭查询窗口
+            $("#searchWindow").window("close");
+
 		});
 		
 	});
@@ -207,24 +235,33 @@
 		<div style="height:31px;overflow:hidden;" split="false" border="false" >
 			<div class="datagrid-toolbar">
 				<a id="save" icon="icon-save" href="#" class="easyui-linkbutton" plain="true" >保存</a>
+				<script type="text/javascript">
+					$(function(){
+                        $("#save").click(function(){
+                            //表单校验
+                            var r = $("#addSubareaForm").form('validate');
+                            if(r){
+                                $("#addSubareaForm").submit();
+                            }
+                        });
+					});
+				</script>
 			</div>
 		</div>
 		
 		<div style="overflow:auto;padding:5px;" border="false">
-			<form>
+			<form id="addSubareaForm" method="post" action="subareaAction_add.action">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">分区信息</td>
 					</tr>
 					<tr>
-						<td>分拣编码</td>
-						<td><input type="text" name="id" class="easyui-validatebox" required="true"/></td>
-					</tr>
-					<tr>
 						<td>选择区域</td>
 						<td>
-							<input class="easyui-combobox" name="region.id"  
-    							data-options="valueField:'id',textField:'name',url:'json/standard.json'" />  
+							<input class="easyui-combobox" name="region.id"
+								   data-options="valueField:'id',
+								   textField:'name',mode:'remote',
+    							   url:'regionAction_listajax.action'" />
 						</td>
 					</tr>
 					<tr>
@@ -242,11 +279,11 @@
 					<tr>
 						<td>单双号</td>
 						<td>
-							<select class="easyui-combobox" name="single" style="width:150px;">  
-							    <option value="0">单双号</option>  
-							    <option value="1">单号</option>  
-							    <option value="2">双号</option>  
-							</select> 
+							<select class="easyui-combobox" name="single" style="width:150px;">
+								<option value="0">单双号</option>
+								<option value="1">单号</option>
+								<option value="2">双号</option>
+							</select>
 						</td>
 					</tr>
 					<tr>
@@ -260,7 +297,7 @@
 	<!-- 查询分区 -->
 	<div class="easyui-window" title="查询分区窗口" id="searchWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
 		<div style="overflow:auto;padding:5px;" border="false">
-			<form>
+			<form id="searchForm">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">查询条件</td>

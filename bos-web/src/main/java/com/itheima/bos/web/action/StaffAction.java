@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 @Scope("prototype")
@@ -36,7 +37,7 @@ public class StaffAction extends IBaseAction<Staff> {
 
         staffService.pageQuery(pageBean);
 
-        this.java2Json(pageBean,new String[]{"currentPage","detachedCriteria","pageSize"});
+        this.java2Json(pageBean,new String[]{"currentPage","detachedCriteria","pageSize","decidedzones"});
 
         return NONE;
     }
@@ -70,6 +71,13 @@ public class StaffAction extends IBaseAction<Staff> {
 
 
 
+
+    public String listajax(){
+
+        List<Staff> list = staffService.findListNotDelete();
+        java2Json(list,new String[]{"decidedzones"});
+        return NONE;
+    }
 
     public void setIds(String ids) {
         this.ids = ids;
